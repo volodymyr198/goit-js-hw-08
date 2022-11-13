@@ -14,5 +14,7 @@ function onAddStorage(event) {
 function onPlayUserTime() {
   const timeVideo = localStorage.getItem('videoplayer-current-time');
 
-  player.setCurrentTime(timeVideo);
+  if (timeVideo) {
+    player.setCurrentTime(timeVideo);
+  }
 }
