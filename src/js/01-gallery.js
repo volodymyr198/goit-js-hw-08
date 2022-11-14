@@ -16,6 +16,7 @@ galleryEl.insertAdjacentHTML('beforeEnd', createEl);
 
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
+  captionPosition: 'bottom',
   animationSpeed: 400,
   captionDelay: 250,
 });
